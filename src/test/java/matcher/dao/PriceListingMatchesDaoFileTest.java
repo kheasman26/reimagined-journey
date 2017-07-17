@@ -60,13 +60,13 @@ public class PriceListingMatchesDaoFileTest {
         // For sake of ease for assert make all double-quotes be single
         String line1Escaped = line1.replaceAll("\"", "\'");
         Assert.assertEquals(
-                "{'product_name':'manu1','listings':[{'title':'pl1a-title','manufacturer':'MANU1','currency':null,'price':'1.00','matched':true},{'title':'pl1b-title','manufacturer':'MANU1','currency':null,'price':'2.00','matched':true},{'title':'pl1c-title','manufacturer':'MANU1','currency':null,'price':'3.00','matched':true}]}",
+                "{'product_name':'manu1','listings':[{'title':'pl1a-title','manufacturer':'MANU1','currency':null,'price':'1.00'},{'title':'pl1b-title','manufacturer':'MANU1','currency':null,'price':'2.00'},{'title':'pl1c-title','manufacturer':'MANU1','currency':null,'price':'3.00'}]}",
                 line1Escaped);
 
         String line2 = bis.readLine();
         String line2Escaped = line2.replaceAll("\"", "\'");
         Assert.assertEquals(
-                "{'product_name':'manu2','listings':[{'title':'pl2a-title','manufacturer':'MANU2','currency':null,'price':'1.00','matched':true}]}",
+                "{'product_name':'manu2','listings':[{'title':'pl2a-title','manufacturer':'MANU2','currency':null,'price':'1.00'}]}",
                 line2Escaped);
     }
 }
