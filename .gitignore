@@ -1,0 +1,14 @@
+# eclipse files
+.project
+.classpath
+
+# gradle things
+.settings
+.gradle
+
+# gradle build dir
+/build
+
+# eclipse build dir
+/bin
+
